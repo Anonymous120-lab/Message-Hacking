@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Hacking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SMS Hacking Tool</h1>
+        <p>Enter the phone number to hack SMS:</p>
+        <input type="text" id="phoneNumber" placeholder="Phone Number"><br></br>
+        <button onclick="hackSMS()">Hack SMS</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function hackSMS() {
+            const phoneNumber = document.getElementById('phoneNumber').value;
+            document.getElementById('result').innerText = `Hacking SMS for ${phoneNumber}...`;
+            // Simulate hacking process
+            setTimeout(() => {
+                document.getElementById('result').innerText = `Successfully hacked SMS for ${phoneNumber}!`;
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
